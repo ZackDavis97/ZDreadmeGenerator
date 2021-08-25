@@ -1,11 +1,11 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const util = require("util");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateReadme = require("./utils/generateReadme");
 const inquirer = require("inquirer");
-const writeFileAsync = util.promisify(fs.writeFile)
+const writeFileAsync = util.promisify(fs.writeFile);
 
-function tellUser (){
+function promptUser (){
     return inquirer.prompt([
         {
             type: "input",
@@ -68,11 +68,12 @@ function tellUser (){
 // TODO: Create a function to initialize app
 async function init() {
     try {
-        const answers = await tellUser();
-        const generateContent = generateMarkdown(answers);
-        await writeFileAsync('./dist/Markdown.md', generateContent);
-        console.log("Successful");
+        const answers = await promptUser();
+        const generateContent = generateReadme(answers);
+        await writeFileAsync('./dist/README.md', generateContent);
+        console.log('Successful');
     }   catch(err) {
+        console.log(err);
     }
 }
 

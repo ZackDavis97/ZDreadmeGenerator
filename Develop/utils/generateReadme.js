@@ -1,5 +1,6 @@
-function generateMarkdown(answers) {
+function generateReadme(answers) {
   return `
+<h1 align="center">${answers.title}</h1>
 
 ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
 ## Description
@@ -45,4 +46,4 @@ Find me on GitHub: [${answers.username}](https://github.com/${answers.username})
   `;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateReadme;
