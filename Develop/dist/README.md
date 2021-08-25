@@ -1,9 +1,9 @@
 
-<h1 align="center">README Generator</h1>
+<h1 align="center">title</h1>
 
 ![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br />
 ## Description
-This project is a rEADME builder that uses index.js and a generateReadme.js
+description
 ## Table of Contents
 - [Description](#description)
 
@@ -20,10 +20,10 @@ This project is a rEADME builder that uses index.js and a generateReadme.js
 - [Questions](#questions)
 
 ## Installation
-skip
+no
 
 ## Usage
-To help create README's faster
+yes
 
 ## License
 ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
@@ -31,15 +31,15 @@ To help create README's faster
 This application is covered by the MIT license. 
 
 ## Contributing
-Zack Davis
+me
 
 ## Tests
-No
+yes
 
 ## Questions
-No<br />
+contact<br />
 <br />
-Find me on GitHub: [Maybe](https://github.com/Maybe)<br />
+Find me on GitHub: [zack](https://github.com/zack)<br />
 <br />
-✉️ Email me with any questions: mayve<br />
+✉️ Email me with any questions: jan<br />
   
