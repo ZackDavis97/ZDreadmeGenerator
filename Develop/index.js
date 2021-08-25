@@ -3,6 +3,7 @@ const fs = require("fs");
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 const inquirer = require("inquirer");
+const writeFileAsync = util.promisify(fs.writeFile)
 
 function tellUser (){
     return inquirer.prompt([
@@ -65,7 +66,15 @@ function tellUser (){
     ]);
 }
 // TODO: Create a function to initialize app
-function init() {}
+async function init() {
+    try {
+        const answers = await tellUser();
+        const generateContent = generateMarkdown(answers);
+        await writeFileAsync('./dist/Markdown.md', generateContent);
+        console.log("Successful");
+    }   catch(err) {
+    }
+}
 
 // Function call to initialize app
 init();
