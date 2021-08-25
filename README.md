@@ -31,3 +31,8 @@ THEN I am taken to the corresponding section of the README
 
 This homework assingment was created using a node.js application that takes users input in the terminal command line and creates a README.md with the information. The information created by the user can be found in the dist/ folder README.md when completed. This assignment is very useful for creating a desired README.md faster than thinking and typing out each line.
 
+* Below is the link to the GitHub repository for the assignment and a video guiding the user step by step.
+
+https://github.com/ZackDavis97/ZDreadmeGenerator
+
+https://drive.google.com/file/d/1guggE-175i_opWAFpQgX5jJaumxoAGdH/view
